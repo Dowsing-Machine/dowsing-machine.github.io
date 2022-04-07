@@ -1,0 +1,50 @@
+<html>
+<body>
+    <header>
+        <h1>Dowsing</h1>
+        <h2>A Task-Driven Approach for Multiple-View Visualizations Dynamic Recommendation</h2>
+    </header>
+    <img width="100%" src="fig1.jpg">
+
+    <p>
+        Most users are able to obtain their explorable ideas for a data table but cannot clearly
+        declare their analysis tasks as visual queries. Visualization recommendation methods can reduce the demand for
+        data and design knowledge of visual analysis by extracting or referring information in existing high-quality
+        views.
+    </p>
+    <p>
+        However, most solutions need users to articulate a precise constraint when they try to steer
+        recommendations with their intentions and insights. To address this limitation, we allowed participants to
+        create and alter multiple views for data exploration in a Workshop to further examine the analytical
+        requirements entailed by users constantly generating charts. Our deep learning model was built using
+        triangulation from Workshop to dynamically perceive the users’ analytical tasks in the editing sequence on data
+        and views. 
+        </p>
+        <p>We provided Dowsing, a mixed-initiative recommendation system for multiple-view visualizations. It
+        can utilize and expose the user’s potential analysis tasks to recommend visualizations during the explorative
+        building phase. Meanwhile, Dowsing allows users to confirm and edit their intentions as they explore further to
+        quickly adapt to changing the analysis requirements. We evaluated our deep learning model through quantitative
+        experiments and verified the effectiveness of Dowsing by user study using vega-datasets.
+    </p>
+    <img width="100%" src="workflow.jpg">
+    <p>The workflow of Dowsing is shown as above. The system can be devided into two main parts: the perception and the recommendation generation. The preception uses LSTM model, together with statistical methods, to predict user intent. The user intent, represented as a set of constraints, is mixed with data facts and generic visualization rules and used
+    together with the ASP solver in recommendation generation, which in turn yields a series of recommended views.</p>
+    <p>You can watch our overview video below.</p>
+    <video style="width: 100%;" controls
+        src="%231125_Dowsing_Demo%20Video.mp4"></video>
+    <a href="http://dowsing-machine.com">Demo</a>
+    <a href="https://github.com/Dowsing-Machine/Dowsing-Workshop/tree/dowsing">Github</a>
+</body>
+<style>
+    img, video{
+        margin: 10px 0;
+    }
+
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+</style>
+
+</html>
