@@ -8,9 +8,12 @@
     <header>
         <h1></h1>
         <h2>Dowsing: A Task-Driven Approach for Multiple-View Visualizations Dynamic Recommendation</h2>
-    <hr>
+        <hr>
     </header>
-    <img width="100%" src="fig1.jpg">
+    <div>
+        <img id="main_pic" width="100%" src="fig1.jpg">
+        
+    </div>
 
     <p>
         Most users are able to obtain their explorable ideas for a data table but cannot clearly
@@ -43,23 +46,40 @@
     <video style="width: 100%;" controls
         src="https://dowsing-1256314557.cos.ap-chengdu.myqcloud.com/%231125_Dowsing_Demo%20Video.mp4"></video>
     <a href="http://dowsing-machine.com">Demo</a>
-    <a href="https://github.com/Dowsing-Machine/Dowsing-Workshop/tree/dowsing">Github</a>
+    <a href="https://github.com/Dowsing-Machine/Dowsing">Github</a>
 </body>
 
 <style>
-    header{
+    header {
         text-align: center;
         /* position: sticky; */
         /* top: 0; */
         background-color: white;
     }
-    header h1{
+
+    header h1 {
         margin-bottom: 0;
     }
-    header h2{
+
+    header h2 {
         margin-top: 0.2em;
         margin-bottom: 0.2em;
     }
+
+    #main_pic {
+        transition-property: all;
+        transition-duration: 150ms;
+    }
+
+    #main_pic:hover {
+        filter: brightness(.5);
+    }
+
+    #main_pic:hover::before {
+        content: "aaa";
+        display: block;
+    }
+
     img,
     video {
         margin: 10px 0;
